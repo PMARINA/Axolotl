@@ -13,14 +13,8 @@ void setup() {
 }
 
 void loop() {
-  right.write(0);
-  if(leftSensor.distance() < 25){
-    left.write(130);
-  }
-  else{
-    left.write(95);
-  }
-  delay(100);
+
+  sensorTestingLoop();
 }
 
 void sensorTestingLoop(){
