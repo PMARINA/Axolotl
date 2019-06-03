@@ -2,6 +2,7 @@
 #include <SharpIR.h>;
 Servo left;
 Servo right;
+
 SharpIR leftSensor(A5, 25, 95, 20150);
 SharpIR frontSensor(A4, 25, 95, 20150);
 
@@ -12,6 +13,7 @@ void setup() {
 }
 
 void loop() {
+
   sensorTestingLoop();
 }
 
